@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WelcomeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aplikcja Witająca" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Z2-xT-twy">
+                                <rect key="frame" x="0.0" y="30" width="375" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="2w0-Yi-5it"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0015138035058957003" blue="0.73061191099476441" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFB-qJ-Lpj">
+                                <rect key="frame" x="29" y="225" width="317" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WIP-1A-GDi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="podaj swoje imię" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwS-ki-9Zl">
+                                <rect key="frame" x="116" y="150" width="143" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="CqN-N6-7dR"/>
+                                    <constraint firstAttribute="height" constant="20" id="PgN-MM-J3m"/>
+                                    <constraint firstAttribute="width" constant="143" id="UUC-gC-XJg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWo-bL-wTj">
+                                <rect key="frame" x="137" y="315" width="100" height="34"/>
+                                <color key="backgroundColor" red="0.072089052704616643" green="0.73061191099476441" blue="0.028555003229337444" alpha="0.37164782801418439" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="fy2-80-JLq"/>
+                                    <constraint firstAttribute="width" constant="100" id="hEb-6P-BOL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.73061191099476441" green="0.69869021968900624" blue="0.70455799744881964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Przywitaj">
+                                    <color key="titleColor" red="0.73061191099476441" green="0.089528932241490361" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="welcomeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Afb-Si-Sit"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SWo-bL-wTj" firstAttribute="top" secondItem="JFB-qJ-Lpj" secondAttribute="bottom" constant="60" id="0Uk-BC-Isc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JFB-qJ-Lpj" secondAttribute="trailing" constant="13" id="8Ce-1t-4y9"/>
+                            <constraint firstItem="4Z2-xT-twy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E9z-tx-qA7"/>
+                            <constraint firstItem="4Z2-xT-twy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="RCo-9l-HJ5"/>
+                            <constraint firstItem="zwS-ki-9Zl" firstAttribute="top" secondItem="4Z2-xT-twy" secondAttribute="bottom" constant="45" id="aU0-dh-FIS"/>
+                            <constraint firstItem="zwS-ki-9Zl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="gb5-OU-WvW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zwS-ki-9Zl" secondAttribute="trailing" constant="100" id="olv-gV-qHo"/>
+                            <constraint firstItem="JFB-qJ-Lpj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="vy9-c7-qui"/>
+                            <constraint firstItem="SWo-bL-wTj" firstAttribute="centerX" secondItem="JFB-qJ-Lpj" secondAttribute="centerX" id="wMW-rD-Om2"/>
+                            <constraint firstAttribute="trailing" secondItem="4Z2-xT-twy" secondAttribute="trailing" id="yPV-Aa-gnm"/>
+                            <constraint firstItem="JFB-qJ-Lpj" firstAttribute="top" secondItem="zwS-ki-9Zl" secondAttribute="bottom" constant="55" id="ztO-nR-4Cj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4Z2-xT-twy"/>
+                                <exclude reference="JFB-qJ-Lpj"/>
+                                <exclude reference="zwS-ki-9Zl"/>
+                                <exclude reference="SWo-bL-wTj"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4Z2-xT-twy"/>
+                                <include reference="JFB-qJ-Lpj"/>
+                                <include reference="zwS-ki-9Zl"/>
+                                <include reference="SWo-bL-wTj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="labelview" destination="zwS-ki-9Zl" id="ZLc-pJ-Mjt"/>
+                        <outlet property="tekstName" destination="JFB-qJ-Lpj" id="FH0-bf-AwW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378.39999999999998" y="315.29235382308849"/>
+        </scene>
+    </scenes>
+</document>
